@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useState } from 'react';
+import { useEffect } from 'react';
 function App() {
+  //Variaveis
+  //const [variavel, functionParaMudarValorDaVariavel] = useState("Valor Inicial");
+  const [useEffectCounter, setUseEffectCounter] = useState(0);
+  const [logado,setLogado] = useState(false);
+
+  useEffect(()=>{
+    console.log("useEffect chamado")
+    setUseEffectCounter(useEffectCounter + 1)
+  }, [logado])
+
+
+  const Logar = () => {
+    setLogado(true);
+  }
+  const Deslogar = () => {
+    setLogado(false);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1> Use Effect foi chamado {useEffectCounter} vezes</h1>
+      {logado ? <p> logado</p> : <p> deslogado</p>}
+      <button onClick={Logar}>Logar</button>
+      <button onClick={Deslogar}>Deslogar</button>
     </div>
   );
 }
