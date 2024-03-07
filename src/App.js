@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Botao from './botao/botao';
+import Titulo from './titulo/Titulo';
 function App() {
   //Variaveis
   //const [variavel, functionParaMudarValorDaVariavel] = useState("Valor Inicial");
@@ -23,10 +25,10 @@ function App() {
 
   return (
     <div>
+      <Titulo classe="titulo red">Titulo</Titulo>
       <h1> Use Effect foi chamado {useEffectCounter} vezes</h1>
-      {logado ? <p> logado</p> : <p> deslogado</p>}
-      <button onClick={Logar}>Logar</button>
-      <button onClick={Deslogar}>Deslogar</button>
+      <Botao tarefa={Logar} classe="botao blue"> Fazer Login </Botao>
+      <Botao tarefa={Deslogar} classe="botao red"> Deslogar </Botao>
     </div>
   );
 }

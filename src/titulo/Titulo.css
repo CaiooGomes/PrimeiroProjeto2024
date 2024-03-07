@@ -1,0 +1,19 @@
+.titulo{
+    font-size: 20px;
+    border: 2px black solid;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.purple{
+    background-color: purple;
+}
