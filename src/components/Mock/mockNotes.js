@@ -1,7 +1,7 @@
 import React from 'react'
 import { generateAtualDate } from '../../Helper/generateAtualDate'
 
-const mockNotes = [
+export const mockNotes = [
     {
         id: 1,
         title: 'nota 1 teste',
@@ -23,4 +23,3 @@ const mockNotes = [
 
 ]
 
-export default mockNotes

@@ -8,6 +8,7 @@ function Navbar() {
             <div><Link to='/'>Home</Link></div>
             <div><Link to='/anime'>Anime</Link></div>
             <div><Link to='/favorito'>Favorito</Link></div>
+            <div><Link to='/notes'>Notes</Link></div>
     </nav>
   )
 }

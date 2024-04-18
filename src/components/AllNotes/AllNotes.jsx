@@ -1,13 +1,14 @@
 import React, { useContext } from 'react'
-import { NotesContext } from '../context/NotesContext'
+import { NoteContext } from '../../components/context/NoteContext';
+import Note from '../Note/Note';
 
 function AllNotes() {
-    const { notes } = useContext(NotesContext)
+  const { notes } = useContext(NoteContext);
   return (
     <div className='AllNotes'>
-        {notes.map((note) => {
-            <a key={note.id} {...note.id} {...n}></a>
-        })}
+      {notes.map((note) => {
+        <Note key={note.id} {...notes}></Note>
+      })}
     </div>
   )
 }

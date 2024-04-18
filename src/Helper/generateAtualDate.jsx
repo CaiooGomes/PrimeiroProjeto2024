@@ -6,6 +6,6 @@ export function generateAtualDate() {
         year: "numeric"
     }
 
-    return brazilDate;
     const brazilDate = new Date().toLocaleDateString("en-GB", options);
+    return brazilDate;
 }
