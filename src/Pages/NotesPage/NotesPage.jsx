@@ -1,15 +1,15 @@
 import React from 'react'
-import './NotesPage.css'
 import { NoteProvider } from '../../components/context/NoteContext'
-import AllNotes from '../../components/AllNotes/AllNotes'
-import FormNote from '../../components/FormNote/FormNote'
+import FormNote from "../../components/FormNote/FormNote"// novo
+import AllNotes from "../../components/AllNotes/AllNotes"
+import './NotesPage.css'
 
 function NotesPage() {
   return (
-    <NoteProvider>      
+    <NoteProvider>
       <div className='notePageContainer'>
-          <FormNote/>
-          <AllNotes />
+        <FormNote></FormNote>
+        <AllNotes></AllNotes>
       </div>
     </NoteProvider>
   )

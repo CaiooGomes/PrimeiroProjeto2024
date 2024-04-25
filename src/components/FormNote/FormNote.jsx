@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./FormNote.css";
-import { NoteContext } from "../../components/context/NoteContext";
+import { NoteContext } from "../context/NoteContext";
 
 function FormNote() { // componente montando o formulario das notas
     const [noteCreated, setNoteCreated] = useState({ title: "", description: "" });
@@ -42,4 +42,4 @@ function FormNote() { // componente montando o formulario das notas
     );
 }
 
-export default FormNote;	
+export default FormNote;

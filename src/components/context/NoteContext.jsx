@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
-import { mockNotes } from "../../components/Mock/mockNotes"; // não criamos ainda
-import { generateAtualDate } from "../../Helper/generateAtualDate";
-import { generateRandomId} from "../../Helper/generateRandomid"
+import {mockNotes} from "../Mock/mockNotes"
+import { generateAtualDate } from "../../Helper/generateAtualDate"
+import { generateRandomId} from "../../Helper/generateRandomid" 
 
 const NoteContext = createContext(); //Criaando a loja
 

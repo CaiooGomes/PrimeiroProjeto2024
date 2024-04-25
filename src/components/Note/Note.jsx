@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Note({title, description, data, id}) {
+function Note({title, description, date, id}) {
   return (
     <div>
         <h1>{title}</h1>
-        <h1>{description}</h1>
-        <h1>{data}</h1>
+        <span>{description}</span>
+        <div>{date}</div>
     </div>
   )
 }

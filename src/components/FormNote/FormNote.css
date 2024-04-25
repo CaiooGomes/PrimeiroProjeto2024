@@ -1,4 +1,4 @@
-.asite-notes{
+.aside-notes{
     background-color: blue;
     width: 400px;
     height: 100vh;
@@ -19,12 +19,11 @@
 }
 
 #buttonForm{
-    background: purple;
+    background-color: purple;
     color: white;
     border: none;
     height: 40px;
     border-radius: 6px;
-
 }
 
 #buttonForm:hover{

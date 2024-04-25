@@ -6,9 +6,9 @@ function AllNotes() {
   const { notes } = useContext(NoteContext);
   return (
     <div className='AllNotes'>
-      {notes.map((note) => {
-        <Note key={note.id} {...notes}></Note>
-      })}
+      {notes.map((n) => (
+        <Note key={n.id} {...n}/>
+      ))}
     </div>
   )
 }

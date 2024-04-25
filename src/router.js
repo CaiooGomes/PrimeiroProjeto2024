@@ -20,16 +20,17 @@ export const router = createBrowserRouter([
                 element: <AnimePage></AnimePage>
             },
             {
+                path: "/notes",
+                element: <NotesPage/>
+            },
+            {
                 path: "/favorito",
                 element: <Favorito></Favorito>,
                 loader: async () => {
                     return fetch(`https://api.jikan.moe/v4/anime?q=pokemon`)
                 }
-            },
-            {
-                path: "/notes",
-                element: <NotesPage></NotesPage>
             }
+
         ],errorElement: <ErrorPage></ErrorPage>
     }
 ])
